@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Pastelería Dulce Sabor{% endblock %}</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <style>
+       
+        body {
+            background: linear-gradient(135deg, #fff5f7 0%, #fce4ec 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a4a4a;
+        }
+
+        
+        .navbar-pasteleria {
+            background-color: #d63384 !important;
+            box-shadow: 0 4px 12px rgba(214, 51, 132, 0.2);
+        }
+
+        
+        .btn-pasteleria {
+            background-color: #d63384;
+            color: white;
+            border-radius: 20px;
+            font-weight: 600;
+            padding: 8px 20px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-pasteleria:hover {
+            background-color: #b02a6b;
+            color: white;
+            box-shadow: 0 4px 10px rgba(176, 42, 107, 0.4);
+        }
+
+        /* Contenedores y Tarjetas con sombra elegante */
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-pasteleria mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="{% url 'inicio' %}">
+            <i class="bi bi-cake2-fill me-2"></i>Pastelería Dulce Sabor
+        </a>
+    </div>
+    </nav>
+
+    
+    <div class="container pb-5">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

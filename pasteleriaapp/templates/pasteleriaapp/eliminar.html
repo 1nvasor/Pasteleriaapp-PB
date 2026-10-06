@@ -1,0 +1,21 @@
+{% extends 'pasteleriaapp/base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm border-danger">
+            <div class="card-header bg-danger text-white py-3">
+                <h5 class="card-title mb-0 fw-bold">Confirmar Eliminación</h5>
+            </div>
+            <div class="card-body p-4 text-center">
+                <p class="fs-5">¿Está seguro de que desea eliminar permanentemente el producto <strong>"{{ producto.nombre }}"</strong>?</p>
+                <form method="post" class="mt-4">
+                    {% csrf_token %}
+                    <a href="{% url 'inicio' %}" class="btn btn-secondary me-2">Cancelar</a>
+                    <button type="submit" class="btn btn-danger">Sí, Eliminar Registro</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

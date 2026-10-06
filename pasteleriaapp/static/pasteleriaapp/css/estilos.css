@@ -1,0 +1,71 @@
+/* Paleta de colores para Pastelería */
+:root {
+    --rosa-pastel: #f8edeb;
+    --rosa-principal: #f4acb7;
+    --rosa-oscuro: #d8e2dc;
+    --marron-texto: #6d597a;
+    --blanco-card: #ffffff;
+}
+
+body {
+    background-color: #faf0ca;
+    background: linear-gradient(135deg, #ffe5ec 0%, #f8edeb 100%);
+    color: var(--marron-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Navbar decorada */
+.navbar-pasteleria {
+    background-color: #b5838d !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff !important;
+    letter-spacing: 1px;
+}
+
+/* Tarjetas y Contenedores */
+.card-decorada {
+    border: none;
+    border-radius: 15px;
+    background-color: var(--blanco-card);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-decorada:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Botones con estilo */
+.btn-pasteleria {
+    background-color: #e56b6f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-pasteleria:hover {
+    background-color: #b5838d;
+    color: white;
+    box-shadow: 0 4px 10px rgba(229, 107, 111, 0.4);
+}
+
+/* Tablas elegantes */
+.table-pasteleria {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-pasteleria thead {
+    background-color: #e56b6f;
+    color: white;
+}
