@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set "VIRTUAL_ENV=C:\Users\user\Desktop\pasteleria_proyecto\venv"
+=======
+set "VIRTUAL_ENV=C:\Users\Benjamin\Desktop\Pasteleriaapp-PB\venv"
+>>>>>>> 6d1dce2a47393e8f2bca6929c82b880fffecae1c
 
 if not defined PROMPT set PROMPT=$P$G
 
