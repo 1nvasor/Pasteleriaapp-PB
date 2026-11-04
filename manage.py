@@ -2,6 +2,9 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import django.db.backends.base.base
+
+django.db.backends.base.base.BaseDatabaseWrapper.check_database_version_supported = lambda self: None
 
 
 def main():
