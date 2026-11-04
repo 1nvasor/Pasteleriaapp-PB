@@ -33,9 +33,5 @@ class Producto(models.Model):
 
     fecha_creacion = models.DateTimeField(auto_now_add=True)
 
-    nombre = models.CharField(max_length=50, verbose_name="Nombre del Pastel/Producto") 
-
-    descripcion = models.TextField(verbose_name="Descripción", blank=True, null=True)
-
     def __str__(self):
         return f"{self.nombre} (${self.precio})"
